@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: "The Archon's Thesis",
+  tagline: 'A narrative companion to the FFXIV Main Scenario Quest',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -34,6 +34,23 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap',
+      type: 'text/css',
+      rel: 'stylesheet',
+    },
+  ],
+
+  scripts: [
+    {
+      src: 'https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3',
+      async: true,
+    },
+  ],
+
+  clientModules: [require.resolve('./src/clientModules/eorzeaTooltips.js')],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -49,10 +66,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/controvi/archons-thesis/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -60,11 +74,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/controvi/archons-thesis/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -79,27 +89,31 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/archons-social-card.svg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'My Site',
+        title: "The Archon's Thesis",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "The Archon's Thesis",
+          src: 'img/archons-logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Encyclopaedia',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Chronicles', position: 'left'},
+          {to: '/about', label: 'About', position: 'right'},
+          {to: '/how-to-use', label: 'How to Use', position: 'right'},
+          {to: '/contact', label: 'Contact', position: 'right'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/controvi/archons-thesis',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,28 +123,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Lore',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Encyclopaedia',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'The Project',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'About',
+                to: '/about',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'How to Use',
+                to: '/how-to-use',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Contact',
+                to: '/contact',
+              },
+              {
+                label: 'About the Author',
+                to: '/about-the-author',
               },
             ],
           },
@@ -138,17 +156,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/controvi/archons-thesis',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Archon's Thesis. Unofficial fan project; not affiliated with Square Enix.<br />FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.<br />© SQUARE ENIX`,
       },
       prism: {
         theme: prismThemes.github,

@@ -1,0 +1,29 @@
+.term {
+  color: var(--at-link);
+  border-bottom: 1px dotted rgba(226, 192, 106, 0.5);
+  cursor: help;
+  text-decoration: none;
+}
+
+.term:hover {
+  color: var(--at-gold-bright);
+  border-bottom-color: var(--at-gold-bright);
+}
+
+.spoilerGate {
+  display: inline;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.8rem;
+  color: var(--at-text-muted);
+  background: rgba(28, 31, 40, 0.8);
+  border: 1px dashed var(--at-panel-border);
+  border-radius: 3px;
+  padding: 0 0.4rem;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.spoilerGate:hover {
+  color: var(--at-gold);
+  border-color: var(--at-gold-muted);
+}

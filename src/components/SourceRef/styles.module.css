@@ -1,0 +1,15 @@
+.chip {
+  display: inline-block;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.75rem;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--at-gold-muted);
+  background: rgba(200, 168, 78, 0.08);
+  border: 1px solid var(--at-panel-border);
+  border-radius: 3px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 0.15rem;
+  vertical-align: baseline;
+  white-space: nowrap;
+}

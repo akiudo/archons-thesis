@@ -1,18 +1,53 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0 5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: radial-gradient(ellipse at 50% 0%, rgba(200, 168, 78, 0.08) 0%, transparent 60%),
+    linear-gradient(180deg, var(--at-bg-elevated) 0%, var(--at-bg) 100%);
+  border-bottom: 1px solid var(--at-panel-border);
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.4) 100%);
+  pointer-events: none;
+}
+
+.heroTitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--at-gold-bright);
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 20px rgba(200, 168, 78, 0.2);
+  position: relative;
+}
+
+.heroTagline {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--at-text-muted);
+  max-width: 36rem;
+  margin: 1rem auto 2rem;
+  line-height: 1.6;
+  position: relative;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroTagline {
+    font-size: 1.05rem;
   }
 }
 
@@ -20,4 +55,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }

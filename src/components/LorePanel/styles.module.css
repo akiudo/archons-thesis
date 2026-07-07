@@ -1,0 +1,75 @@
+.panel {
+  border: 1px solid var(--at-panel-border);
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: rgba(28, 31, 40, 0.95);
+  border-bottom: 1px solid var(--at-panel-border);
+}
+
+.badge {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.7rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+  color: var(--at-gold);
+  letter-spacing: 0.02em;
+}
+
+.body {
+  padding: 1rem 1.25rem;
+  background: rgba(22, 24, 31, 0.8);
+  font-family: 'EB Garamond', Georgia, serif;
+  line-height: 1.7;
+}
+
+.body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Variant accents */
+.lore .badge {
+  color: var(--at-gold-bright);
+  border-color: var(--at-gold);
+  background: rgba(200, 168, 78, 0.1);
+}
+
+.lore {
+  border-left: 3px solid var(--at-gold);
+}
+
+.history .badge {
+  color: var(--at-accent-blue);
+  border-color: var(--at-accent-blue);
+  background: rgba(126, 184, 218, 0.1);
+}
+
+.history {
+  border-left: 3px solid var(--at-accent-blue);
+}
+
+.warning .badge {
+  color: #e8a87c;
+  border-color: #e8a87c;
+  background: rgba(232, 168, 124, 0.1);
+}
+
+.warning {
+  border-left: 3px solid #e8a87c;
+}

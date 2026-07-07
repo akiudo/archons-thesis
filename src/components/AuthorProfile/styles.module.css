@@ -1,0 +1,96 @@
+.card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: var(--at-panel);
+  border: 1px solid var(--at-panel-border);
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.portraitColumn {
+  flex-shrink: 0;
+}
+
+.portrait {
+  width: 180px;
+  height: 246px;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid var(--at-gold-muted);
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgba(200, 168, 78, 0.15);
+}
+
+.portraitPlaceholder {
+  width: 180px;
+  height: 246px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(28, 31, 40, 0.9);
+  border: 2px solid var(--at-panel-border);
+  border-radius: 4px;
+}
+
+.portraitInitial {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 3rem;
+  color: var(--at-gold-muted);
+}
+
+.details {
+  flex: 1;
+}
+
+.name {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold-bright);
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  color: var(--at-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.world {
+  font-style: normal;
+  color: var(--at-gold-muted);
+  font-size: 0.9rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.lodestoneButton {
+  margin-bottom: 0;
+}
+
+.lodestonePending {
+  font-size: 0.85rem;
+  color: var(--at-text-muted);
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    justify-content: center;
+  }
+}

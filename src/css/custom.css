@@ -1,30 +1,287 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * The Archon's Thesis — FFXIV-inspired encyclopedia theme
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Archon's Thesis design tokens */
+  --at-bg: #0e0f14;
+  --at-bg-elevated: #16181f;
+  --at-panel: #1c1f28;
+  --at-panel-border: rgba(200, 168, 78, 0.35);
+  --at-gold: #c8a84e;
+  --at-gold-bright: #e2c06a;
+  --at-gold-muted: #8a7a4a;
+  --at-text: #d8d4c8;
+  --at-text-muted: #8a8678;
+  --at-link: #e2c06a;
+  --at-accent-blue: #7eb8da;
+
+  /* Infima primary ramp (gold) */
+  --ifm-color-primary: #c8a84e;
+  --ifm-color-primary-dark: #b89845;
+  --ifm-color-primary-darker: #a8883e;
+  --ifm-color-primary-darkest: #8a7032;
+  --ifm-color-primary-light: #d4b45a;
+  --ifm-color-primary-lighter: #e2c06a;
+  --ifm-color-primary-lightest: #f0d080;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Cinzel', 'EB Garamond', Georgia, serif;
+  --ifm-font-color-base: var(--at-text);
+  --ifm-background-color: var(--at-bg);
+  --ifm-navbar-background-color: rgba(14, 15, 20, 0.92);
+  --ifm-footer-background-color: var(--at-bg-elevated);
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(200, 168, 78, 0.12);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #e2c06a;
+  --ifm-color-primary-dark: #d4b45a;
+  --ifm-color-primary-darker: #c8a84e;
+  --ifm-color-primary-darkest: #a8883e;
+  --ifm-color-primary-light: #f0d080;
+  --ifm-color-primary-lighter: #f5dc96;
+  --ifm-color-primary-lightest: #fae8b0;
+  --ifm-background-color: var(--at-bg);
+  --ifm-font-color-base: var(--at-text);
+  --docusaurus-highlighted-code-line-bg: rgba(200, 168, 78, 0.15);
+}
+
+html {
+  background-color: var(--at-bg);
+}
+
+body {
+  background-color: var(--at-bg);
+  color: var(--at-text);
+}
+
+/* ── Navbar ─────────────────────────────────────────────── */
+
+.navbar {
+  background-color: rgba(14, 15, 20, 0.92) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--at-panel-border);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--at-gold-bright);
+}
+
+.navbar__link {
+  color: var(--at-text);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--at-gold-bright);
+}
+
+/* ── Sidebar (journal-style lore index) ─────────────────── */
+
+.theme-doc-sidebar-container {
+  background-color: var(--at-bg-elevated);
+  border-right: 1px solid var(--at-panel-border);
+}
+
+.menu {
+  padding: 0.5rem 0;
+}
+
+.menu__list-item-collapsible .menu__link {
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--at-gold-muted);
+  font-weight: 600;
+}
+
+.menu__link {
+  color: var(--at-text-muted);
+  border-left: 3px solid transparent;
+  border-radius: 0;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.menu__link:hover {
+  color: var(--at-gold);
+  background-color: rgba(200, 168, 78, 0.06);
+}
+
+.menu__link--active {
+  color: var(--at-gold-bright) !important;
+  border-left-color: var(--at-gold);
+  background-color: rgba(200, 168, 78, 0.1);
+  font-weight: 600;
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+
+.footer {
+  background-color: var(--at-bg-elevated) !important;
+  border-top: 1px solid var(--at-panel-border);
+}
+
+.footer__title {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold);
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+}
+
+.footer__link-item {
+  color: var(--at-text-muted);
+}
+
+.footer__link-item:hover {
+  color: var(--at-gold-bright);
+}
+
+.footer__copyright {
+  color: var(--at-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* ── Doc article body (encyclopedia entry) ──────────────── */
+
+.theme-doc-markdown {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.theme-doc-markdown h1 {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold-bright);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--at-panel-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.theme-doc-markdown h2 {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+}
+
+.theme-doc-markdown h2::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--at-gold), transparent);
+  margin-top: 0.4rem;
+}
+
+.theme-doc-markdown h3,
+.theme-doc-markdown h4 {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold-muted);
+}
+
+.theme-doc-markdown a {
+  color: var(--at-link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(226, 192, 106, 0.3);
+}
+
+.theme-doc-markdown a:hover {
+  color: var(--at-gold-bright);
+  border-bottom-color: var(--at-gold-bright);
+}
+
+/* In-universe flavor quotes */
+.theme-doc-markdown blockquote {
+  border-left: 3px solid var(--at-gold);
+  background: rgba(28, 31, 40, 0.8);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--at-text);
+  border-radius: 0 4px 4px 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.theme-doc-markdown blockquote p {
+  margin-bottom: 0;
+}
+
+/* ── Buttons (game menu style) ──────────────────────────── */
+
+.button--primary {
+  background: linear-gradient(180deg, #2a2d38 0%, #1c1f28 100%);
+  border: 1px solid var(--at-gold);
+  color: var(--at-gold-bright);
+  font-family: var(--ifm-heading-font-family);
+  letter-spacing: 0.04em;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.button--primary:hover {
+  background: linear-gradient(180deg, #323548 0%, #242830 100%);
+  border-color: var(--at-gold-bright);
+  color: var(--at-gold-bright);
+  box-shadow: 0 0 12px rgba(200, 168, 78, 0.25);
+}
+
+.button--secondary {
+  background: transparent;
+  border: 1px solid var(--at-panel-border);
+  color: var(--at-text);
+}
+
+.button--secondary:hover {
+  border-color: var(--at-gold);
+  color: var(--at-gold-bright);
+}
+
+/* ── Breadcrumbs ────────────────────────────────────────── */
+
+.breadcrumbs__link {
+  color: var(--at-text-muted);
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--at-gold);
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--at-gold-muted);
+}
+
+/* ── Pagination ───────────────────────────────────────────── */
+
+.pagination-nav__link {
+  background: var(--at-panel);
+  border: 1px solid var(--at-panel-border);
+  border-radius: 4px;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--at-gold);
+}
+
+.pagination-nav__sublabel {
+  color: var(--at-text-muted);
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.pagination-nav__label {
+  color: var(--at-gold);
+  font-family: var(--ifm-heading-font-family);
 }
