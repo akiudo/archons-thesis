@@ -155,6 +155,10 @@ const config = {
                 label: 'About the Author',
                 to: '/about-the-author',
               },
+              {
+                label: 'Privacy',
+                to: '/privacy',
+              },
             ],
           },
           {
