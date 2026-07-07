@@ -22,6 +22,11 @@ function HomepageHeader() {
             to="/docs/intro">
             Enter the Encyclopaedia
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/about-the-author">
+            Meet the Author
+          </Link>
         </div>
       </div>
     </header>

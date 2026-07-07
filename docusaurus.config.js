@@ -110,6 +110,7 @@ const config = {
           },
           {to: '/blog', label: 'Chronicles', position: 'left'},
           {to: '/about', label: 'About', position: 'right'},
+          {to: '/about-the-author', label: 'Author', position: 'right'},
           {to: '/how-to-use', label: 'How to Use', position: 'right'},
           {to: '/contact', label: 'Contact', position: 'right'},
           {
