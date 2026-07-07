@@ -1,3 +1,15 @@
+.featureLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.featureLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .features {
   padding: 3rem 0 4rem;
   width: 100%;

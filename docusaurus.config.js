@@ -128,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'Encyclopaedia',
-                to: '/docs/intro',
+                to: '/docs/About/introduction',
               },
             ],
           },
