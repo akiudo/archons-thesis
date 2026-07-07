@@ -66,7 +66,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/controvi/archons-thesis/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -74,7 +73,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl: 'https://github.com/controvi/archons-thesis/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
