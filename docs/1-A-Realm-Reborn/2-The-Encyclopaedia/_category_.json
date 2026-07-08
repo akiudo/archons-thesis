@@ -1,0 +1,8 @@
+{
+  "label": "The Encyclopaedia",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Thematic deep-dives into world-building, history, and universe physics."
+  }
+}

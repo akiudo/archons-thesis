@@ -1,0 +1,42 @@
+.aside {
+  margin: 1.5rem 0;
+  padding: 0.85rem 1rem;
+  background: rgba(28, 31, 40, 0.85);
+  border: 1px solid var(--at-panel-border);
+  border-left: 3px solid var(--at-accent-blue);
+  border-radius: 0 4px 4px 0;
+}
+
+.label {
+  display: block;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.7rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  color: var(--at-accent-blue);
+  margin-bottom: 0.35rem;
+}
+
+.body {
+  margin: 0;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--at-text-muted);
+}
+
+.note {
+  color: var(--at-text-muted);
+}
+
+.link {
+  color: var(--at-gold-bright);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(226, 192, 106, 0.35);
+}
+
+.link:hover {
+  color: var(--at-gold-bright);
+  border-bottom-color: var(--at-gold-bright);
+}

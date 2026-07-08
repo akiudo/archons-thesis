@@ -8,6 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "The Archon's Thesis",
@@ -20,10 +22,9 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://controvi.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/archons-thesis/',
+  url: 'https://archons-thesis.com',
+  // Custom domain — site is served from the domain root
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -80,10 +81,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
-          trackingID: 'G-56JC3LF4X3',
-          anonymizeIP: true,
-        },
+        ...(isProd
+          ? {
+              gtag: {
+                trackingID: 'G-56JC3LF4X3',
+                anonymizeIP: true,
+              },
+            }
+          : {}),
       }),
     ],
   ],
