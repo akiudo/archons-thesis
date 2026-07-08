@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/A-Realm-Reborn/The-Journey">
+            to="/docs/The-Journey">
             Begin the Journey
           </Link>
           <Link

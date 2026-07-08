@@ -154,11 +154,11 @@ const config = {
             items: [
               {
                 label: 'Journey',
-                to: '/docs/A-Realm-Reborn/The-Journey',
+                to: '/docs/The-Journey',
               },
               {
                 label: 'Encyclopaedia',
-                to: '/docs/A-Realm-Reborn/The-Encyclopaedia',
+                to: '/docs/The-Encyclopaedia',
               },
               {
                 label: 'Context',
