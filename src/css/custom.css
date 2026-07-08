@@ -60,10 +60,21 @@ body {
 /* ── Navbar ─────────────────────────────────────────────── */
 
 .navbar {
-  background-color: rgba(14, 15, 20, 0.92) !important;
-  backdrop-filter: blur(8px);
+  background-color: rgba(14, 15, 20, 0.96) !important;
+  /* No backdrop-filter here — it creates a containing block and clips the
+     mobile menu (navbar-sidebar is rendered inside <nav>). */
   border-bottom: 1px solid var(--at-panel-border);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile nav drawer must sit above page content */
+.navbar-sidebar,
+.navbar-sidebar__backdrop {
+  z-index: var(--ifm-z-index-overlay);
+}
+
+.navbar-sidebar {
+  background-color: var(--at-bg-elevated) !important;
 }
 
 .navbar__title {
