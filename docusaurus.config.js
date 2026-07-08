@@ -14,7 +14,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const config = {
   title: "The Archon's Thesis",
   tagline: 'A narrative companion to the FFXIV Main Scenario Quest',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/archons-logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -118,9 +118,21 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'journeySidebar',
+            position: 'left',
+            label: 'Journey',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'encyclopaediaSidebar',
             position: 'left',
             label: 'Encyclopaedia',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'contextSidebar',
+            position: 'left',
+            label: 'Context',
           },
           {to: '/blog', label: 'Chronicles', position: 'left'},
           {to: '/about', label: 'About', position: 'right'},
@@ -141,8 +153,20 @@ const config = {
             title: 'Lore',
             items: [
               {
+                label: 'Journey',
+                to: '/docs/A-Realm-Reborn/The-Journey',
+              },
+              {
                 label: 'Encyclopaedia',
-                to: '/docs/About/introduction',
+                to: '/docs/A-Realm-Reborn/The-Encyclopaedia',
+              },
+              {
+                label: 'Context',
+                to: '/docs/A-Realm-Reborn/Context',
+              },
+              {
+                label: 'Chronicles',
+                to: '/blog',
               },
             ],
           },

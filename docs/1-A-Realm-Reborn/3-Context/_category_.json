@@ -2,7 +2,7 @@
   "label": "Context",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "Clarifications and background notes that support the journey without being part of the MSQ itself."
+    "type": "doc",
+    "id": "A-Realm-Reborn/Context/Overview"
   }
 }

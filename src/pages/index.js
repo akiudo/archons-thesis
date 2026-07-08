@@ -19,8 +19,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/About/introduction">
-            Enter the Encyclopaedia
+            to="/docs/A-Realm-Reborn/The-Journey">
+            Begin the Journey
           </Link>
           <Link
             className="button button--secondary button--lg"
