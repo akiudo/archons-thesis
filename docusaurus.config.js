@@ -92,6 +92,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/archons-social-card.svg',
+      metadata: [
+        {
+          name: 'keywords',
+          content:
+            'Final Fantasy XIV, FFXIV, lore, MSQ, encyclopaedia, A Realm Reborn, Eorzea, narrative guide',
+        },
+      ],
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
