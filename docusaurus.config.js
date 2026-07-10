@@ -162,7 +162,7 @@ const config = {
               },
               {
                 label: 'Context',
-                to: '/docs/A-Realm-Reborn/Context',
+                to: '/docs/Context',
               },
               {
                 label: 'Chronicles',
