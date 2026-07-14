@@ -17,7 +17,7 @@
 
 .badge {
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-variant: small-caps;
   letter-spacing: 0.08em;
   padding: 0.15rem 0.5rem;
@@ -27,7 +27,7 @@
 
 .title {
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--at-gold);
   letter-spacing: 0.02em;
 }
