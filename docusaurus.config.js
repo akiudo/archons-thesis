@@ -205,7 +205,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} The Archon's Thesis. Unofficial fan project; not affiliated with Square Enix.<br />FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.<br />© SQUARE ENIX`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Archon's Thesis. Unofficial fan project; not affiliated with Square Enix.<br />FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.<br />© SQUARE ENIX<br />Game assets from the <a href="https://na.finalfantasyxiv.com/lodestone/special/fankit/desktop_wallpaper/4_0/" target="_blank" rel="noopener noreferrer">official FFXIV Fan Kit</a>.`,
       },
       prism: {
         theme: prismThemes.github,

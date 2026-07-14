@@ -1,0 +1,148 @@
+{
+  "patches": {
+    "2.0": {
+      "title": "A Realm Reborn",
+      "subtitle": "Seventh Astral Era"
+    },
+    "3.0": {
+      "title": "Heavensward",
+      "src": "/img/fankit/expansion-banners/Heavensward.jpg",
+      "alt": "Heavensward"
+    },
+    "3.1": {
+      "title": "As Goes Light, So Goes Darkness",
+      "src": "/img/fankit/expansion-banners/Heavensward-1.jpg",
+      "alt": "Heavensward — As Goes Light, So Goes Darkness"
+    },
+    "3.2": {
+      "title": "The Gears of Change",
+      "src": "/img/fankit/expansion-banners/Heavensward-2.jpg",
+      "alt": "Heavensward — The Gears of Change"
+    },
+    "3.3": {
+      "title": "Revenge of the Horde",
+      "src": "/img/fankit/expansion-banners/Heavensward-3.jpg",
+      "alt": "Heavensward — Revenge of the Horde"
+    },
+    "3.4": {
+      "title": "Soul Surrender",
+      "src": "/img/fankit/expansion-banners/Heavensward-Soul-Surrender-3.4.jpg",
+      "alt": "Heavensward — Soul Surrender"
+    },
+    "3.5": {
+      "title": "The Far Edge of Fate",
+      "src": "/img/fankit/expansion-banners/Heavensward-the-Far-Edge-of-Fate-3.5.jpg",
+      "alt": "Heavensward — The Far Edge of Fate"
+    },
+    "4.0": {
+      "title": "Stormblood",
+      "src": "/img/fankit/expansion-banners/Stormblood.jpg",
+      "alt": "Stormblood"
+    },
+    "4.1": {
+      "title": "The Legend Returns",
+      "src": "/img/fankit/expansion-banners/Stormblood-the-Legend-Returns-4.1.jpg",
+      "alt": "Stormblood — The Legend Returns"
+    },
+    "4.2": {
+      "title": "Rise of a New Sun",
+      "src": "/img/fankit/expansion-banners/Stormblood-Rise-of-a-New-Sun-4.2.jpg",
+      "alt": "Stormblood — Rise of a New Sun"
+    },
+    "4.3": {
+      "title": "Under the Moonlight",
+      "src": "/img/fankit/expansion-banners/Stormblood-Under-the-Moonlight-4.3.jpg",
+      "alt": "Stormblood — Under the Moonlight"
+    },
+    "4.4": {
+      "title": "Prelude in Violet",
+      "src": "/img/fankit/expansion-banners/Stormblood-prelude-in-violet-4.4.jpg",
+      "alt": "Stormblood — Prelude in Violet"
+    },
+    "4.5": {
+      "title": "A Requiem for Heroes",
+      "src": "/img/fankit/expansion-banners/Stormblood-a-requiem-for-heroes-4.5.jpg",
+      "alt": "Stormblood — A Requiem for Heroes"
+    },
+    "5.0": {
+      "title": "Shadowbringers",
+      "src": "/img/fankit/expansion-banners/Shadownbringers.jpg",
+      "alt": "Shadowbringers"
+    },
+    "5.1": {
+      "title": "Vows of Virtue, Deeds of Cruelty",
+      "src": "/img/fankit/expansion-banners/Shadownbringers-vows-of-virtue-deeds-of-cruelty-5.1.jpg",
+      "alt": "Shadowbringers — Vows of Virtue, Deeds of Cruelty"
+    },
+    "5.2": {
+      "title": "Echoes of a Fallen Star",
+      "src": "/img/fankit/expansion-banners/Shadownbringers-echoes-of-a-fallen-star-5.2.jpg",
+      "alt": "Shadowbringers — Echoes of a Fallen Star"
+    },
+    "5.3": {
+      "title": "Reflections in Crystal",
+      "src": "/img/fankit/expansion-banners/Shadownbringers-reflections-in-crystal-5.3.jpg",
+      "alt": "Shadowbringers — Reflections in Crystal"
+    },
+    "5.4": {
+      "title": "Futures Rewritten",
+      "src": "/img/fankit/expansion-banners/Shadownbringers-futures-rewritten-5.4.jpg",
+      "alt": "Shadowbringers — Futures Rewritten"
+    },
+    "5.5": {
+      "title": "Death Unto Dawn",
+      "src": "/img/fankit/expansion-banners/Shadownbringers-death-unto-down-5.5.jpg",
+      "alt": "Shadowbringers — Death Unto Dawn"
+    },
+    "6.0": {
+      "title": "Endwalker",
+      "src": "/img/fankit/expansion-banners/Endwalker.jpg",
+      "alt": "Endwalker"
+    },
+    "6.1": {
+      "title": "Newfound Adventure",
+      "src": "/img/fankit/expansion-banners/Endwalker-newfound-adventure-6.1.jpg",
+      "alt": "Endwalker — Newfound Adventure"
+    },
+    "6.2": {
+      "title": "Buried Memory",
+      "src": "/img/fankit/expansion-banners/Endwalker-buried-memory-6.2.jpg",
+      "alt": "Endwalker — Buried Memory"
+    },
+    "6.4": {
+      "title": "The Dark Throne",
+      "src": "/img/fankit/expansion-banners/Endwalker-the-dark-throne-6.4.jpg",
+      "alt": "Endwalker — The Dark Throne"
+    },
+    "7.0": {
+      "title": "Dawntrail",
+      "src": "/img/fankit/expansion-banners/Dawntrail.jpg",
+      "alt": "Dawntrail"
+    },
+    "7.1": {
+      "title": "Crossroads",
+      "src": "/img/fankit/expansion-banners/Dawntrail-crossroads-7.1.jpg",
+      "alt": "Dawntrail — Crossroads"
+    },
+    "7.2": {
+      "title": "Seekers of Eternity",
+      "src": "/img/fankit/expansion-banners/Dawntrail-seekers-of-eternityu-7.2.jpg",
+      "alt": "Dawntrail — Seekers of Eternity"
+    },
+    "7.3": {
+      "title": "The Promise of Tomorrow",
+      "src": "/img/fankit/expansion-banners/Dawntrail-the-promise-if-tomorrow-7.3.jpg",
+      "alt": "Dawntrail — The Promise of Tomorrow"
+    },
+    "7.4": {
+      "title": "Into the Mist",
+      "src": "/img/fankit/expansion-banners/Dawntrail-into-the-mist-7.4.jpg",
+      "alt": "Dawntrail — Into the Mist"
+    },
+    "7.5": {
+      "title": "Trail to the Heavens",
+      "src": "/img/fankit/expansion-banners/Dawntrail-trail-to-the-heavens-7.5.jpg",
+      "alt": "Dawntrail — Trail to the Heavens"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: clamp(9rem, 18vw, 11.5rem);
+  margin: 0 0 2rem;
+  overflow: hidden;
+  border: 1px solid var(--at-panel-border);
+  border-radius: 4px;
+  background-color: var(--at-bg-elevated);
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+  display: block;
+}
+
+.bannerFallback {
+  height: auto;
+  min-height: 9rem;
+  display: block;
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(200, 168, 78, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, var(--at-bg-elevated) 0%, var(--at-bg) 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(14, 15, 20, 0.05) 0%, rgba(14, 15, 20, 0.7) 100%),
+    radial-gradient(ellipse at center, transparent 30%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0.55rem 0.85rem;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.patchLabel {
+  margin: 0;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--at-gold-bright);
+}
+
+@media screen and (max-width: 996px) {
+  .banner {
+    height: clamp(8rem, 28vw, 9.5rem);
+  }
+
+  .content {
+    padding: 0.5rem 0.75rem;
+  }
+}
