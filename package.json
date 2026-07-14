@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "fetch-tales": "node scripts/fetch-tales-feed.js",
+    "prebuild": "npm run fetch-tales",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

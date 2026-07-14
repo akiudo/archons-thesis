@@ -1,0 +1,94 @@
+.feed {
+  margin: 2rem 0;
+}
+
+.postList {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.postCard {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  background: var(--at-panel);
+  border: 1px solid var(--at-panel-border);
+  border-radius: 4px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.postCard:hover {
+  border-color: rgba(200, 168, 78, 0.55);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+}
+
+.imageLink {
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(200, 168, 78, 0.2);
+}
+
+.postImage {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+.postBody {
+  min-width: 0;
+}
+
+.postTitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.postTitle a {
+  color: var(--at-gold-bright);
+  text-decoration: none;
+}
+
+.postTitle a:hover {
+  color: var(--at-link);
+  text-decoration: underline;
+}
+
+.postDescription {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--at-text);
+  line-height: 1.6;
+  margin: 0 0 0.75rem;
+}
+
+.postDate {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--at-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.readMore {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.readMoreButton {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .postCard {
+    grid-template-columns: 1fr;
+  }
+
+  .postImage {
+    height: 180px;
+  }
+}
