@@ -35,6 +35,32 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: "The Archon's Thesis",
+        url: 'https://archons-thesis.com/',
+        description:
+          'An interconnected multimedia lore encyclopedia and companion video essay project dedicated to Final Fantasy XIV.',
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: "The Archon's Thesis",
+        url: 'https://archons-thesis.com/',
+        logo: 'https://archons-thesis.com/img/archons-logo.svg',
+      }),
+    },
+  ],
+
   stylesheets: [
     {
       href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap',
@@ -89,6 +115,62 @@ const config = {
               },
             }
           : {}),
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['**/Coming-Soon', '**/404.html'],
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+
+            const highPriorityPaths = new Set([
+              '/',
+              '/about',
+              '/blog',
+              '/docs/The-Journey',
+              '/docs/The-Encyclopaedia',
+              '/docs/Context',
+            ]);
+
+            return items
+              .filter((item) => {
+                try {
+                  return !new URL(item.url).pathname.includes('/Coming-Soon');
+                } catch {
+                  return true;
+                }
+              })
+              .map((item) => {
+                try {
+                  const path =
+                    new URL(item.url).pathname.replace(/\/$/, '') || '/';
+
+                  if (path === '/') {
+                    return {...item, priority: 1.0};
+                  }
+                  if (highPriorityPaths.has(path)) {
+                    return {...item, priority: 0.8};
+                  }
+                  if (
+                    path.startsWith('/blog/') &&
+                    !['/blog/archive', '/blog/authors', '/blog/tags'].includes(
+                      path,
+                    ) &&
+                    !path.startsWith('/blog/tags/')
+                  ) {
+                    return {...item, priority: 0.75};
+                  }
+                  if (path.startsWith('/docs/')) {
+                    return {...item, priority: 0.7};
+                  }
+                } catch {
+                  // Keep default priority when URL parsing fails.
+                }
+                return item;
+              });
+          },
+        },
       }),
     ],
   ],
@@ -96,13 +178,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/archons-social-card.svg',
+      image: 'img/archons-social-card.png',
       metadata: [
         {
           name: 'keywords',
           content:
             'Final Fantasy XIV, FFXIV, lore, MSQ, encyclopaedia, A Realm Reborn, Eorzea, narrative guide',
         },
+        {property: 'og:site_name', content: "The Archon's Thesis"},
       ],
       colorMode: {
         defaultMode: 'dark',
