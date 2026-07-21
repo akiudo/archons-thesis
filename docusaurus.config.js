@@ -217,6 +217,7 @@ const config = {
             position: 'left',
             label: 'Context',
           },
+          {to: '/lore-index', label: 'Index', position: 'left'},
           {to: '/blog', label: 'Chronicles', position: 'left'},
           {to: '/about', label: 'About', position: 'right'},
           {to: '/about-the-author', label: 'Author', position: 'right'},
@@ -247,6 +248,10 @@ const config = {
               {
                 label: 'Context',
                 to: '/docs/Context',
+              },
+              {
+                label: 'Lore Index',
+                to: '/lore-index',
               },
               {
                 label: 'Chronicles',

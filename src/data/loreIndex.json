@@ -1,0 +1,609 @@
+{
+  "terms": [
+    {
+      "term": "Adventurers' Guild",
+      "aliases": [
+        "Adventurer's Guild"
+      ],
+      "summary": "The guild hall where new arrivals begin their career — the common destination for both Legacy and fresh-faced adventurers.",
+      "type": "place",
+      "tags": [
+        "Eorzea",
+        "starting areas"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Aether",
+      "aliases": [],
+      "summary": "The ambient magical energy of the world — the substance that fills the ethereal void of the ARR opening dream.",
+      "type": "concept",
+      "tags": [
+        "magic",
+        "physics"
+      ],
+      "links": [
+        {
+          "label": "Hear... Feel... Think...",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Hear-Feel-Think",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "The Aetheryte Network",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/The-Aetheryte-Network",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Aetheryte Network",
+      "aliases": [
+        "Aetherytes"
+      ],
+      "summary": "The realm-wide network of aetheryte crystals that enables teleportation across Eorzea.",
+      "type": "concept",
+      "tags": [
+        "travel",
+        "Eorzea"
+      ],
+      "links": [
+        {
+          "label": "The Aetheryte Network",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/The-Aetheryte-Network",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Alphinaud Leveilleur",
+      "aliases": [
+        "Alphinaud"
+      ],
+      "summary": "A young Sharlayan scholar and twin to Alisaie — companion to the Warrior of Light from A Realm Reborn into later journeys.",
+      "type": "person",
+      "tags": [
+        "Sharlayan",
+        "Scions",
+        "Leveilleur"
+      ],
+      "links": [
+        {
+          "label": "Gridania",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Gridania",
+          "expansion": "arr",
+          "patch": "2.0"
+        },
+        {
+          "label": "The Holy See",
+          "href": "/docs/The-Journey/Heavensward/3.0/The-Holy-See",
+          "expansion": "heavensward",
+          "patch": "3.0"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0"
+    },
+    {
+      "term": "Battle of Carteneau",
+      "aliases": [
+        "Carteneau"
+      ],
+      "summary": "The catastrophic battle at the end of the Sixth Astral Era — the event new adventurers canonically did not witness.",
+      "type": "event",
+      "tags": [
+        "Calamity",
+        "Legacy",
+        "Mor Dhona"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Black Shroud",
+      "aliases": [],
+      "summary": "The ancient forest region surrounding Gridania — the Black Shroud and the Twelveswood are one and the same.",
+      "type": "place",
+      "tags": [
+        "Gridania",
+        "Twelveswood",
+        "forest"
+      ],
+      "links": [
+        {
+          "label": "Gridania",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Gridania",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Calamity",
+      "aliases": [
+        "Seventh Umbral Calamity",
+        "The Calamity"
+      ],
+      "summary": "The realm-shattering disaster that ended the original game and ushered in the Seventh Umbral Era.",
+      "type": "event",
+      "tags": [
+        "Seventh Umbral Era",
+        "Legacy",
+        "history"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Coerthas",
+      "aliases": [],
+      "summary": "The frozen highlands north of Gridania — gateway to Ishgard and the Dragonsong War.",
+      "type": "place",
+      "tags": [
+        "Ishgard",
+        "Heavensward",
+        "highland"
+      ],
+      "links": [
+        {
+          "label": "The Holy See",
+          "href": "/docs/The-Journey/Heavensward/3.0/The-Holy-See",
+          "expansion": "heavensward",
+          "patch": "3.0"
+        }
+      ],
+      "expansion": "heavensward",
+      "patch": "3.0"
+    },
+    {
+      "term": "Dravania",
+      "aliases": [],
+      "summary": "The western wilds beyond Ishgard — ancestral lands of the great wyrms.",
+      "type": "place",
+      "tags": [
+        "Heavensward",
+        "dragons",
+        "Ishgard"
+      ],
+      "links": [
+        {
+          "label": "The Holy See",
+          "href": "/docs/The-Journey/Heavensward/3.0/The-Holy-See",
+          "expansion": "heavensward",
+          "patch": "3.0"
+        }
+      ],
+      "expansion": "heavensward",
+      "patch": "3.0"
+    },
+    {
+      "term": "Gaius van Baelsar",
+      "aliases": [
+        "Gaius",
+        "The Black Wolf"
+      ],
+      "summary": "Legatus of the XIVth Imperial Legion — antagonist of the A Realm Reborn finale and commander at the Praetorium.",
+      "type": "person",
+      "tags": [
+        "Garlemald",
+        "Operation Archon",
+        "Praetorium"
+      ],
+      "links": [
+        {
+          "label": "Operation Archon",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Operation-Archon",
+          "expansion": "arr",
+          "patch": "2.0-finale"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-finale"
+    },
+    {
+      "term": "Grand Companies",
+      "aliases": [
+        "Grand Company"
+      ],
+      "summary": "The military arms of Eorzea's three city-states — the Immortal Flames, the Maelstrom, and the Order of the Twin Adder.",
+      "type": "faction",
+      "tags": [
+        "Ul'dah",
+        "Limsa Lominsa",
+        "Gridania",
+        "military"
+      ],
+      "links": [
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Gridania",
+      "aliases": [
+        "City of Trees"
+      ],
+      "summary": "The forest city-state of the Black Shroud — one of the three nations of Eorzea and a common starting city.",
+      "type": "place",
+      "tags": [
+        "Black Shroud",
+        "Twelveswood",
+        "city-state"
+      ],
+      "links": [
+        {
+          "label": "Gridania",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Gridania",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Hraesvelgr",
+      "aliases": [],
+      "summary": "One of the first brood — a great wyrm of Dravania whose bond with mortals shaped the Dragonsong War.",
+      "type": "person",
+      "tags": [
+        "Dravania",
+        "dragons",
+        "Heavensward"
+      ],
+      "links": [
+        {
+          "label": "The Holy See",
+          "href": "/docs/The-Journey/Heavensward/3.0/The-Holy-See",
+          "expansion": "heavensward",
+          "patch": "3.0"
+        }
+      ],
+      "expansion": "heavensward",
+      "patch": "3.0"
+    },
+    {
+      "term": "Immortal Flames",
+      "aliases": [],
+      "summary": "Ul'dah's Grand Company — the sultanate's military arm and the company sworn to by desert-born adventurers.",
+      "type": "faction",
+      "tags": [
+        "Ul'dah",
+        "Thanalan",
+        "Grand Companies"
+      ],
+      "links": [
+        {
+          "label": "Ul'dah",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Uldah",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Ishgard",
+      "aliases": [
+        "Holy See",
+        "The Holy See"
+      ],
+      "summary": "Theocratic city-state of Coerthas — seat of the Holy See and focus of the Dragonsong War.",
+      "type": "place",
+      "tags": [
+        "Coerthas",
+        "Heavensward",
+        "city-state"
+      ],
+      "links": [
+        {
+          "label": "The Holy See",
+          "href": "/docs/The-Journey/Heavensward/3.0/The-Holy-See",
+          "expansion": "heavensward",
+          "patch": "3.0"
+        }
+      ],
+      "expansion": "heavensward",
+      "patch": "3.0"
+    },
+    {
+      "term": "Legacy Characters",
+      "aliases": [
+        "Legacy",
+        "Legacy players"
+      ],
+      "summary": "Adventurers who survived version 1.0 and were teleported into ARR by Louisoix's final spell rather than arriving by carriage or ship.",
+      "type": "concept",
+      "tags": [
+        "1.0",
+        "Calamity",
+        "Mark of the Twelve"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Limsa Lominsa",
+      "aliases": [
+        "Maritime Republic",
+        "thalassocracy"
+      ],
+      "summary": "The maritime republic on the island of Vylbrand — one of Eorzea's three city-states and a common starting city.",
+      "type": "place",
+      "tags": [
+        "Vylbrand",
+        "La Noscea",
+        "city-state"
+      ],
+      "links": [
+        {
+          "label": "Limsa Lominsa",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Limsa-Lominsa",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Louisoix Leveilleur",
+      "aliases": [
+        "Louisoix"
+      ],
+      "summary": "The Archon who cast the spell that saved Legacy characters during the Calamity — teleporting survivors into the Seventh Umbral Era.",
+      "type": "person",
+      "tags": [
+        "Calamity",
+        "Legacy",
+        "Sharlayan"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Maelstrom",
+      "aliases": [],
+      "summary": "Limsa Lominsa's Grand Company — the thalassocracy's naval military arm.",
+      "type": "faction",
+      "tags": [
+        "Limsa Lominsa",
+        "Vylbrand",
+        "Grand Companies"
+      ],
+      "links": [
+        {
+          "label": "Limsa Lominsa",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Limsa-Lominsa",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Mark of the Twelve",
+      "aliases": [],
+      "summary": "The tattoo borne by Legacy survivors — a quiet testament to those who lived through the original game and the Calamity.",
+      "type": "concept",
+      "tags": [
+        "Legacy",
+        "Calamity"
+      ],
+      "links": [
+        {
+          "label": "A Tale of Two Beginnings",
+          "href": "/docs/Context/A-Tale-of-Two-Beginnings",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Order of the Twin Adder",
+      "aliases": [
+        "Twin Adder"
+      ],
+      "summary": "Gridania's Grand Company — the military arm of the forest city-state.",
+      "type": "faction",
+      "tags": [
+        "Gridania",
+        "Black Shroud",
+        "Grand Companies"
+      ],
+      "links": [
+        {
+          "label": "Gridania",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Gridania",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Thanalan",
+      "aliases": [],
+      "summary": "The arid desert region of southern Eorzea — home to the sultanate of Ul'dah.",
+      "type": "place",
+      "tags": [
+        "Ul'dah",
+        "desert"
+      ],
+      "links": [
+        {
+          "label": "Ul'dah",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Uldah",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "The Ultima Weapon",
+      "aliases": [
+        "Ultima Weapon",
+        "Ultima"
+      ],
+      "summary": "Allagan relic weapon unearthed by the Empire — central to the climax of A Realm Reborn.",
+      "type": "other",
+      "tags": [
+        "Allag",
+        "Garlemald",
+        "Operation Archon"
+      ],
+      "links": [
+        {
+          "label": "Operation Archon",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Operation-Archon",
+          "expansion": "arr",
+          "patch": "2.0-finale"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-finale"
+    },
+    {
+      "term": "Ul'dah",
+      "aliases": [
+        "Desert Jewel",
+        "sultanate"
+      ],
+      "summary": "The desert city-state of Thanalan — one of Eorzea's three nations and a common starting city.",
+      "type": "place",
+      "tags": [
+        "Thanalan",
+        "city-state"
+      ],
+      "links": [
+        {
+          "label": "Ul'dah",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Uldah",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        },
+        {
+          "label": "City States and Grand Companies",
+          "href": "/docs/The-Encyclopaedia/A-Realm-Reborn/2.0/The-Seventh-Umbral-Era/City-States-and-Grand-Companies",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    },
+    {
+      "term": "Vylbrand",
+      "aliases": [],
+      "summary": "The island off western Eorzea where Limsa Lominsa stands — heart of the maritime republic.",
+      "type": "place",
+      "tags": [
+        "Limsa Lominsa",
+        "La Noscea",
+        "island"
+      ],
+      "links": [
+        {
+          "label": "Limsa Lominsa",
+          "href": "/docs/The-Journey/A-Realm-Reborn/2.0/Limsa-Lominsa",
+          "expansion": "arr",
+          "patch": "2.0-early"
+        }
+      ],
+      "expansion": "arr",
+      "patch": "2.0-early"
+    }
+  ]
+}
