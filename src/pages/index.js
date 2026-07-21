@@ -24,8 +24,13 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/about-the-author">
-            Meet the Author
+            to="/how-to-use">
+            How to Use
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/lore-index">
+            Lore Index
           </Link>
         </div>
       </div>
@@ -37,8 +42,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
-      description="An interconnected multimedia lore encyclopedia and companion video essay project dedicated to Final Fantasy XIV.">
+      title="FFXIV Lore Encyclopaedia & MSQ Companion"
+      description="The Archon's Thesis — a Final Fantasy XIV lore encyclopaedia and Main Scenario Quest companion. Read Journey chapters, Encyclopaedia deep-dives, and Context notes in sync with your playthrough.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

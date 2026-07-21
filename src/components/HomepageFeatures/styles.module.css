@@ -1,56 +1,188 @@
-.featureLink {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  height: 100%;
+.sectionHeading {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold-bright);
+  font-size: 1.75rem;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.75rem;
+  text-align: center;
 }
 
-.featureLink:hover {
-  text-decoration: none;
-  color: inherit;
+.sectionLead {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--at-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
 }
 
-.features {
-  padding: 3rem 0 4rem;
-  width: 100%;
+/* ── Intro ─────────────────────────────────────────────── */
+
+.intro {
+  padding: 3.5rem 0 2rem;
   background: var(--at-bg);
+  border-bottom: 1px solid rgba(200, 168, 78, 0.12);
 }
 
-.featurePanel {
+.introInner {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.introLead {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--at-text);
+  margin: 0 0 1.25rem;
+}
+
+.introBody {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--at-text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.introLinks {
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--at-text-muted);
+  margin: 0;
+}
+
+.introLinks a {
+  color: var(--at-link);
+}
+
+/* ── Start paths ───────────────────────────────────────── */
+
+.paths {
+  padding: 3rem 0 3.5rem;
+  background: linear-gradient(
+    180deg,
+    var(--at-bg) 0%,
+    var(--at-bg-elevated) 100%
+  );
+}
+
+.pathGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.pathItem {
   background: var(--at-panel);
   border: 1px solid var(--at-panel-border);
   border-radius: 4px;
-  padding: 2rem 1.5rem;
-  margin: 0.5rem;
-  text-align: center;
-  height: 100%;
+  padding: 1.75rem 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.2s ease;
 }
 
-.featurePanel:hover {
-  border-color: var(--at-gold-muted);
-  box-shadow: 0 4px 24px rgba(200, 168, 78, 0.1);
+.pathItem:hover {
+  border-color: rgba(200, 168, 78, 0.55);
 }
 
-.icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  opacity: 0.85;
+.pathEyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--at-text-muted);
 }
 
-.featureTitle {
+.pathTitle {
   font-family: var(--ifm-heading-font-family);
   color: var(--at-gold);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.03em;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
 }
 
-.featureDescription {
+.pathDescription {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--at-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+.pathCta {
+  margin-top: auto;
+}
+
+/* ── Principles ────────────────────────────────────────── */
+
+.principles {
+  padding: 3rem 0 4rem;
+  background: var(--at-bg);
+  border-top: 1px solid rgba(200, 168, 78, 0.12);
+}
+
+.principleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.principleItem {
+  border-top: 1px solid var(--at-panel-border);
+  padding: 1.5rem 0.25rem 0;
+}
+
+.principleTitle {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--at-gold);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 0.75rem;
+}
+
+.principleDescription {
   font-family: 'EB Garamond', Georgia, serif;
   color: var(--at-text-muted);
   font-size: 1rem;
   line-height: 1.65;
-  margin-bottom: 0;
+  margin: 0 0 1.25rem;
+}
+
+.principleActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.principleSecondary {
+  font-size: 0.9rem;
+  color: var(--at-link);
+  text-decoration: none;
+}
+
+.principleSecondary:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 996px) {
+  .pathGrid,
+  .principleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeading {
+    font-size: 1.45rem;
+  }
+
+  .intro {
+    padding: 2.5rem 0 1.5rem;
+  }
 }
